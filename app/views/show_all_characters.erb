@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All characters</title>
+  </head>
+  <body>
+    <p><% @characters.each do |character| %></p>
+    <p><%= character.name %></p>
+    <p><%= Role.find_by(character_id: character.id).role_name %></p>
+    <% end %>
+  </body>
+</html>

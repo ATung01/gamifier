@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gamify Yourself!</title>
+  </head>
+  <body>
+    <h1>Character Creater</h1>
+      <form action="/characters/new" method="post">
+        <p>Enter your name</p>
+        <input type="text" name="character[name]">
+
+        <p>Enter your Role</p>
+        <input type="text" name="character[role_name][type]">
+
+        <input type="submit" name="submit" value="submit">
+      </form>
+  </body>
+</html>
